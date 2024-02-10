@@ -3,6 +3,7 @@ import './App.css';
 import SignIn from "./componets/signIn/sign_in.jsx";
 import Home from "./componets/home/home.jsx";
 import NavBar from "./componets/navBar/navbar.jsx";
+import Chat from "./componets/chat/chat.jsx"
 import { useGeo } from "./hooks/geoFunc.js"
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         {signIn ? <SignIn signInFunc={handleLogIn}></SignIn> : []}
         {home ? <Home></Home> : []}
         {navBar ? <NavBar></NavBar> : []}
+      </div>
+      <div>
+        <Chat></Chat>
       </div>
     </>
   )
